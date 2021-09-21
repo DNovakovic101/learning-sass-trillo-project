@@ -10,7 +10,7 @@
     font-size: 1.4rem;
     height: 7rem;
     background-color: #fff;
-    border-bottom: var(--color-grey-light-2);
+    border-bottom: var(--line);
 
     display: flex;
     justify-content: space-between; // Uses Main axis horiz atm
@@ -31,8 +31,30 @@
 }
 
 .hotel-view {
-    // Testing 
     background-color: #fff;
     flex: 1;
-    height: 70rem;
 }
+
+.detail {
+    font-size: 1.4rem;
+    display: flex;
+    padding: 4.5rem;
+    background-color: var(--color-grey-light-1);
+    border-bottom: var(--line);
+}
+
+.description {
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    flex: 0 0 60%; // Most of the time when we set the % the firs two are 0s
+    margin-right: 4.5rem;
+    font-size: 1.4rem;
+}
+
+.user-reviews {
+    flex: 1; // Take the remaining space 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}   
